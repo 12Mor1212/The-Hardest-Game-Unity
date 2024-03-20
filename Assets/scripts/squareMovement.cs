@@ -13,9 +13,8 @@ public class squareMovement : MonoBehaviour
     public float velocity;
     public Rigidbody2D myRB;
 
-    private Vector2 stop;
 
-    private bool isTouched;
+
     private float horizontal;
     private float vertical;
 
@@ -23,7 +22,6 @@ public class squareMovement : MonoBehaviour
     void Start()
     {
         velocity = 3f;
-        stop = new Vector2(0, 0);
     }
 
     // Update is called once per frame
