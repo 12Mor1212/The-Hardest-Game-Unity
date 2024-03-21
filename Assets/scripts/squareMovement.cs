@@ -21,7 +21,7 @@ public class squareMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velocity = 3f;
+        velocity = 3.5f;
     }
 
     // Update is called once per frame
@@ -35,6 +35,7 @@ public class squareMovement : MonoBehaviour
         if(UnityEngine.Input.GetKey(KeyCode.DownArrow) == true || UnityEngine.Input.GetKey(KeyCode.S) == true){vertical -= velocity;}
 
         if(UnityEngine.Input.GetKey(KeyCode.RightArrow) == true || UnityEngine.Input.GetKey(KeyCode.D) == true){horizontal += velocity;}
+        
         if(UnityEngine.Input.GetKey(KeyCode.LeftArrow) == true || UnityEngine.Input.GetKey(KeyCode.A) == true){horizontal -= velocity;}
         
         Vector2 vector = new Vector2(horizontal, vertical);
